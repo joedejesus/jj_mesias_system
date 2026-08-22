@@ -1,0 +1,39 @@
+# Modelo
+torch==2.13.0
+transformers==5.15.1
+tokenizers
+safetensors==0.8.0
+accelerate==1.14.0
+sentencepiece==0.2.2
+huggingface_hub==1.28.0
+
+# LoRA y datos
+peft==0.20.0
+datasets
+tqdm
+bitsandbytes
+
+# API
+fastapi==0.141.1
+pydantic==2.13.4
+uvicorn==0.52.4
+
+# UI
+gradio==6.25.0
+
+# Web
+requests
+beautifulsoup4
+
+# Persistencia
+jsonlines
+python-dotenv
+
+# Notebooks
+ipykernel
+ipython
+jupyter_client
+jupyter_core
+nbconvert
+nbformat
+

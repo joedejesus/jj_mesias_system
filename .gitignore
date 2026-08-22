@@ -1,0 +1,45 @@
+# Entorno local
+venv/
+.venv/
+env/
+
+# Artefactos pesados del modelo local
+src/modelo/*
+!src/modelo/__init__.py
+!src/modelo/README.md
+
+# Cachés y binarios de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Estado local y salidas regenerables
+# En data/ se versionan datasets y documentación; los JSON de estado local no.
+data/*.json
+!data/README.md
+data/checkpoints/
+data/*.corrupt.*
+*.corrupt.*
+*.log
+*.pid
+
+# Jupyter y cachés varias
+.ipynb_checkpoints/
+.pytest_cache/
+.cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Carpetas temporales de auditoria o trabajo local
+.audit_github/
+tmp/
+temp/
+
+# Editor y sistema operativo
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
