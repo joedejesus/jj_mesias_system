@@ -10,6 +10,7 @@ La vía canónica de arranque es `python.exe -m src ...`.
 - Para una experiencia razonable, conviene usar una máquina limpia y con recursos suficientes; como referencia práctica, 32 GB de RAM ayudan a evitar errores o degradaciones al cargar el modelo.
 - Si cambias el modelo, mezclas dependencias o ejecutas desde un entorno distinto, pueden hacer falta ajustes menores.
 - Si solo quieres ponerlo en marcha, sigue primero [../README.md](../README.md), después [funcionamiento.md](funcionamiento.md) y luego [laboratorio.md](laboratorio.md).
+- Para errores o propuestas sobre el repositorio público, usa issues y Discussions; no se admiten pull requests externos. Revisa [../CONTRIBUTING.md](../CONTRIBUTING.md), [../CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md) y [../SECURITY.md](../SECURITY.md).
 
 ## Comandos literales
 

@@ -50,7 +50,7 @@ Si vienes desde GitHub y quieres dejar Mesias funcionando sin revisar todavía t
 ### 1. Descargar el proyecto desde GitHub
 
 ```cmd
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/joedejesus/jj_mesias_system.git
 cd jj_mesias_system
 ```
 
@@ -164,6 +164,18 @@ Orden recomendado si quieres arrancar rápido:
 - por último [docs/laboratorio.md](docs/laboratorio.md)
 
 Si alguien va a usar Mesias, levantar la API, probar Gradio o tocar entrenamiento, debe seguir esa sección de documentación.
+
+## 🤝 Normas del repositorio
+
+Además de la documentación técnica, el repositorio incluye tres documentos de referencia para su uso público en GitHub:
+
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md): expectativas de conducta para interacciones, issues y propuestas
+- [CONTRIBUTING.md](CONTRIBUTING.md): forma recomendada de plantear mejoras, correcciones y cambios
+- [SECURITY.md](SECURITY.md): pautas para reportar problemas de seguridad o usos inseguros
+
+Las conversaciones públicas del proyecto se canalizan por issues y Discussions. No se admiten pull requests externos como vía ordinaria de cambio.
+
+Estas guías deben leerse junto con [LICENSE](LICENSE), ya que el proyecto se publica con una licencia propietaria de uso limitado.
 
 ## ⚙️ Estado recomendado
 

@@ -17,6 +17,8 @@ Esta guía resume aprendizaje, entrenamiento y portabilidad.
 - Si mueves el proyecto, recrea `venv`.
 - Arranca siempre por la vía canónica `python -m src ...`.
 
+Si durante las pruebas detectas errores, riesgos o mejoras del repositorio público, comunícalos por issues o Discussions. No se admiten pull requests externos; revisa [../CONTRIBUTING.md](../CONTRIBUTING.md) y [../SECURITY.md](../SECURITY.md) antes de publicar detalles sensibles.
+
 ## Pipeline mínimo para aprender
 
 1. Arranca Mesias en consola.

@@ -9,6 +9,8 @@ Mesias usa un modelo local en [src/modelo](../src/modelo). El código solo lo lo
 - El modelo se descarga aparte y se coloca manualmente en [../src/modelo](../src/modelo).
 - Fuera de ese escenario, Mesias puede necesitar ajustes menores de entorno o configuración.
 
+Si vas a informar de errores o proponer mejoras en la publicación pública del proyecto, usa issues y Discussions. La política de contribución, conducta y seguridad está resumida en [../CONTRIBUTING.md](../CONTRIBUTING.md), [../CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md) y [../SECURITY.md](../SECURITY.md).
+
 ## Flujo principal
 
 1. [src/core/model_loader.py](../src/core/model_loader.py) resuelve la ruta del modelo y comprueba que existan tokenizer, configuración y pesos.
