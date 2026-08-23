@@ -1,0 +1,72 @@
+Copyright (c) 2026 Joe De Jesus Fernandez Diniz.
+Todos los derechos reservados.
+
+LICENCIA PROPIETARIA DE USO LIMITADO
+
+1. Titularidad
+
+Este repositorio y sus contenidos originales, incluidos el código fuente, la documentación, los notebooks, las configuraciones, los materiales de apoyo, las estructuras de trabajo, los textos y demás recursos propios del proyecto, son titularidad exclusiva de Joe De Jesus Fernandez Diniz.
+
+La publicación de este repositorio en GitHub o en cualquier otra plataforma no implica cesión de derechos, licencia abierta, autorización general de reutilización, renuncia de acciones, dedicación al dominio público ni transmisión de derechos de propiedad intelectual o de explotación.
+
+2. Objeto de la licencia
+
+Se concede al usuario una autorización limitada, revocable, no exclusiva, intransferible y no sublicenciable para acceder, descargar, ejecutar, analizar y utilizar este repositorio únicamente con fines personales de estudio, revisión técnica y experimentación no comercial.
+
+Dentro de esa autorización, el usuario podrá realizar modificaciones privadas estrictamente necesarias para esos fines, siempre que no sean distribuidas, publicadas, sublicenciadas, cedidas ni explotadas económicamente, total o parcialmente.
+
+La presente licencia no transfiere la titularidad del software ni concede derecho alguno de explotación económica, comercialización o reutilización pública del proyecto o de sus contenidos originales.
+
+3. Usos expresamente prohibidos
+
+Sin autorización previa, expresa y por escrito del titular, queda prohibido:
+
+- vender, revender, comercializar, monetizar o explotar este software o cualquier parte del repositorio;
+- distribuir, redistribuir, publicar, sublicenciar, ceder, alquilar, licenciar a terceros o poner a disposición de terceros este repositorio o partes sustanciales del mismo;
+- incorporar el software, su código, su documentación o sus materiales asociados en productos, servicios, cursos, paquetes, bundles, soluciones empresariales o cualquier otra oferta comercial;
+- ofrecer, desplegar o explotar el proyecto en plataformas de pago, servicios de suscripción, software como servicio, APIs de pago, plataformas alojadas o infraestructuras equivalentes;
+- utilizar el proyecto o sus derivados para prestar servicios remunerados o con finalidad económica, directa o indirecta, a terceros;
+- modificar, adaptar, traducir, fusionar, transformar o crear obras derivadas con fines de distribución, publicación o explotación comercial;
+- utilizar este repositorio o sus contenidos para entrenar, afinar, enriquecer, evaluar o alimentar modelos, agentes o sistemas destinados a explotación comercial, redistribución o integración en productos o servicios de terceros;
+- eliminar, ocultar o alterar avisos de autoría, titularidad, restricciones de uso o referencias a esta licencia;
+- presentar el proyecto, total o parcialmente, como propio.
+
+4. Dependencias y componentes de terceros
+
+Este proyecto depende o puede depender de bibliotecas, frameworks, modelos, datasets y otros componentes de terceros. Cada uno de esos elementos conserva su propia licencia, términos y condiciones de uso.
+
+La presente licencia se aplica exclusivamente a los contenidos originales cuya titularidad corresponde a Joe De Jesus Fernandez Diniz y no sustituye, modifica ni invalida las obligaciones legales asociadas a componentes de terceros.
+
+Las licencias de terceros seguirán aplicándose exclusivamente a los componentes, modelos, bibliotecas, datasets y demás materiales que no sean titularidad de Joe De Jesus Fernandez Diniz.
+
+Corresponde al usuario revisar y cumplir las licencias, restricciones y obligaciones aplicables a todas las dependencias, modelos, datasets y recursos externos utilizados junto con este proyecto.
+
+5. Descargo de responsabilidad
+
+Este software forma parte de un proyecto de inteligencia artificial y puede generar resultados incorrectos, incompletos, sesgados, inesperados, técnicamente defectuosos o potencialmente inapropiados según el contexto de uso, la configuración aplicada, el modelo utilizado y los datos proporcionados por el usuario.
+
+Aunque el proyecto incorpora restricciones, validaciones y decisiones de diseño orientadas a un uso controlado, el titular no garantiza que el software sea inocuo, adecuado para un fin particular, libre de errores, seguro para terceros o apto para entornos sensibles, productivos, comerciales o de alto riesgo.
+
+El uso de este repositorio y de cualquiera de sus salidas, respuestas, entrenamientos, configuraciones, modificaciones o adaptaciones se realiza bajo la exclusiva responsabilidad del usuario.
+
+Será responsabilidad exclusiva del usuario cualquier uso que pueda afectar a terceros, a sistemas técnicos, a datos o a decisiones automatizadas, así como cualquier contexto en el que una salida incorrecta, insegura o malinterpretada pueda causar daño, pérdida, perjuicio económico, impacto reputacional o cualquier otra consecuencia adversa.
+
+En la medida permitida por la ley aplicable, el titular no asume responsabilidad por daños directos, indirectos, incidentales, especiales, punitivos, emergentes, consecuenciales o de cualquier otra naturaleza derivados del acceso, uso, mal uso, imposibilidad de uso o resultados obtenidos mediante este software.
+
+6. Reserva de derechos
+
+Todos los derechos no concedidos expresamente en esta licencia quedan reservados.
+
+Cualquier uso no autorizado expresamente en este texto deberá considerarse prohibido hasta contar con autorización previa, expresa y por escrito del titular.
+
+El incumplimiento de cualquiera de las condiciones aquí previstas extinguirá automáticamente la autorización limitada concedida, sin perjuicio de las acciones legales que correspondan al titular.
+
+7. Garantías
+
+Este software y su documentación se proporcionan "tal cual", sin garantías expresas ni implícitas, incluidas, entre otras, garantías de funcionamiento, disponibilidad, idoneidad para un propósito concreto, exactitud, comerciabilidad o ausencia de infracción, en la medida permitida por la ley aplicable.
+
+8. Ley aplicable e interpretación
+
+La presente licencia se interpretará conforme a la legislación civil, mercantil y de propiedad intelectual aplicable en el domicilio del titular, salvo que una norma imperativa disponga otra cosa.
+
+En caso de controversia, las partes procurarán una solución previa de buena fe. Si ello no fuera posible, cualquier conflicto deberá resolverse conforme a la normativa y a los órganos competentes que correspondan según el domicilio del titular y la ley aplicable, salvo disposición imperativa en contrario.
