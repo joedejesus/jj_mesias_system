@@ -1,40 +1,48 @@
 # Laboratorio de Mesias
 
-Esta guia resume aprendizaje, entrenamiento y portabilidad.
+Esta guía resume aprendizaje, entrenamiento y portabilidad.
+
+## Requisitos prácticos recomendados
+
+- Conviene trabajar sobre una máquina limpia, estable y con recursos suficientes.
+- Como referencia razonable, 32 GB de RAM ayudan a evitar cuellos de botella o fallos al cargar y probar modelos locales.
+- El entrenamiento puede exigir todavía más cuidado según el modelo, el dataset y el estado general del sistema.
 
 ## Regla principal
 
-- Si acabas de clonar el repo desde GitHub, `venv` no vendra incluido y `src/modelo` puede estar vacia salvo archivos de ayuda.
-- Primero recrea `venv` y despues descarga tu motor local dentro de [src/modelo](../src/modelo).
+- Si acabas de clonar el repo desde GitHub, `venv` no vendrá incluido y `src/modelo` puede estar vacía salvo archivos de ayuda.
+- Primero recrea `venv` y después descarga tu motor local dentro de [src/modelo](../src/modelo).
 - No toques [src/modelo](../src/modelo) si tu motor actual ya funciona.
 - Usa siempre el Python de [../venv](../venv).
 - Si mueves el proyecto, recrea `venv`.
-- Arranca siempre por la via canónica `python -m src ...`.
+- Arranca siempre por la vía canónica `python -m src ...`.
 
-## Pipeline minimo para aprender
+## Pipeline mínimo para aprender
 
 1. Arranca Mesias en consola.
-2. Prueba Gradio si quieres una interfaz mas comoda.
+2. Prueba Gradio si quieres una interfaz más cómoda.
 3. Lee [src/mesias.py](../src/mesias.py).
 4. Mira [src/interfaces/roles.py](../src/interfaces/roles.py) y [src/memory](../src/memory).
 5. Deja el entrenamiento para el final.
 
 ## Web durante las pruebas
 
-- Si preguntas por fecha, habitantes, capitales, clima u otros datos externos, Mesias intenta buscar apoyo web por ti incluso sin una formula exacta.
+- Si preguntas por fecha, habitantes, capitales, clima u otros datos externos, Mesias intenta buscar apoyo web por ti incluso sin una fórmula exacta.
 - Si quieres control total, puedes seguir pasando URLs manualmente en consola o API.
 - Si la red del entorno falla, las pruebas locales del modelo siguen funcionando.
 
 ## Memoria del hablante
 
 - Gradio y la consola interactiva pueden recordar datos simples del usuario, por ejemplo nombre o preferencias expresadas de forma directa.
-- Esa memoria se guarda en [../data](../data) con un formato JSON compacto y compatible hacia atras.
-- Si alguno de esos JSON se rompe, Mesias intenta moverlo a un archivo `.corrupt.*` y rehacer el estado minimo.
+- Esa memoria se guarda en [../data](../data) con un formato JSON compacto y compatible hacia atrás.
+- Si alguno de esos JSON se rompe, Mesias intenta moverlo a un archivo `.corrupt.*` y rehacer el estado mínimo.
 
-## Entrenamiento minimo
+## Entrenamiento mínimo
+
+Antes de tocar entrenamiento, asume que puede hacer falta algún ajuste menor. Eso forma parte del objetivo didáctico del proyecto: no esconder toda la complejidad, sino permitir aprender cómo se corrige.
 
 - Dataset simple: [../data/ejemplo_entrenamiento.jsonl](../data/ejemplo_entrenamiento.jsonl)
-- Dataset mas amplio: [../data/dataset_entrenamiento_docente.jsonl](../data/dataset_entrenamiento_docente.jsonl)
+- Dataset más amplio: [../data/dataset_entrenamiento_docente.jsonl](../data/dataset_entrenamiento_docente.jsonl)
 - Runtime y memoria: [../data](../data)
 - Estado de cada archivo persistente: [../data/README.md](../data/README.md)
 - Preparacion: [../src/training/preparacion_datos.py](../src/training/preparacion_datos.py)
@@ -49,6 +57,8 @@ Comando literal para probar solo ese dataset:
 
 Antes de tocar entrenamiento, valida el proyecto con `./venv/Scripts/python.exe -m unittest discover -s tests -p "test_*.py"`.
 
+Esa validación cubre los recorridos principales del repositorio, pero no sustituye la comprobación de tu propio entorno ni garantiza que cualquier configuración externa vaya a comportarse igual.
+
 Valores prudentes:
 
 - `epochs=1.0`
@@ -57,7 +67,7 @@ Valores prudentes:
 - `dataloader_num_workers=0`
 - `cpu_threads=4`
 
-## Compatibilidad basica
+## Compatibilidad básica
 
 Si tu motor actual en [src/modelo](../src/modelo) ya responde bien, no necesitas cambiar nada. Si algun dia pruebas otro, revisa solo esto:
 
@@ -65,7 +75,7 @@ Si tu motor actual en [src/modelo](../src/modelo) ya responde bien, no necesitas
 - Debe tener tokenizer local.
 - Debe tener `config.json`.
 - Debe exponer pesos compatibles para `transformers`, al menos `model.safetensors.index.json`, `model.safetensors` o `pytorch_model.bin`.
-- Si es un motor conversacional, su tokenizer deberia tener chat template o un formato equivalente usable por Mesias.
+- Si es un motor conversacional, su tokenizer debería tener chat template o un formato equivalente usable por Mesias.
 
 Antes de adoptar un motor nuevo o propio de Hugging Face:
 
@@ -77,14 +87,14 @@ Antes de adoptar un motor nuevo o propio de Hugging Face:
 ## Portabilidad
 
 - Puedes mover la carpeta del proyecto.
-- No debes reutilizar el `venv` viejo despues del traslado.
+- No debes reutilizar el `venv` viejo después del traslado.
 - Ejecuta `scripts\setup.cmd` o `./scripts/setup.ps1` en la nueva ruta.
 
-## Que tocar y que no tocar
+## Qué tocar y qué no tocar
 
 - Toca sin miedo: [../src/interfaces/roles.py](../src/interfaces/roles.py), [../src/memory](../src/memory), [../src/security/seguridad.py](../src/security/seguridad.py)
-- Toca con mas cuidado: [../src/training](../src/training)
-- No toques salvo que sepas por que: [../src/modelo](../src/modelo)
+- Toca con más cuidado: [../src/training](../src/training)
+- No toques salvo que sepas por qué: [../src/modelo](../src/modelo)
 
 ## Carpetas auxiliares
 
