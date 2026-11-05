@@ -124,7 +124,7 @@ def create_trainer(
         gradient_accumulation_steps=resolved_config.gradient_accumulation_steps,
         dataloader_num_workers=resolved_config.dataloader_num_workers,
         learning_rate=resolved_config.learning_rate,
-        warmup_ratio=resolved_config.warmup_ratio,
+        warmup_steps=resolved_config.warmup_ratio,
         weight_decay=resolved_config.weight_decay,
         logging_steps=resolved_config.logging_steps,
         save_steps=resolved_config.save_steps,
@@ -144,7 +144,7 @@ def create_trainer(
         args=training_arguments,
         train_dataset=_ListDataset(dataset_rows),
         data_collator=data_collator,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
     )
     return trainer
 
@@ -169,7 +169,7 @@ def train_lora_from_examples(
     )
     trainer.train()
     trainer.model.save_pretrained(str(resolved_config.output_dir))
-    trainer.tokenizer.save_pretrained(str(resolved_config.output_dir))
+    trainer.processing_class.save_pretrained(str(resolved_config.output_dir))
     return trainer
 
 
